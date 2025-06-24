@@ -1,0 +1,9 @@
+# Configurar el tipo MIME correcto para archivos JavaScript
+AddType text/javascript .js
+AddType text/javascript .mjs
+
+# Habilitar CORS para permitar importaciones de módulos
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
